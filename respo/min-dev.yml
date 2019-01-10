@@ -1,4 +1,11 @@
 spring:
+  application:
+      name: min-client
+  cloud:
+      bus:
+        trace:
+          enabled: true
+        enabled: true
   datasource:
       username: shuma
       password: q1w2e3r4
@@ -82,4 +89,9 @@ sys:
       template:
         getCoupon:  l6Iibs1ioRB8sD1zI0mIgBVmdfh_yCbelzZ-IYUxnCc
         groupFinish: ALA0hmubj5ZOBHpMwoGylK0vkTPR7CAKiDYx5_0tfq4
-
+server:
+  port: 13000
+log: #Log
+  path: /opt/log/shuma/
+  appname: open/min/api/
+  level: INFO
