@@ -1,4 +1,6 @@
 spring:
+  application:
+   name: yonghe-min-frist
   datasource:
       username: shuma
       password: q1w2e3r4
@@ -84,3 +86,14 @@ sys:
         groupFinish: ALA0hmubj5ZOBHpMwoGylK0vkTPR7CAKiDYx5_0tfq4
 server:
     port: 8083
+log: #Log
+  path: /opt/log/shuma/
+  appname: open/min/api/
+  level: INFO
+eureka:
+  client:
+    service-url:
+      client:
+        registerWithEureka: false
+        fetchRegistry: false
+        defaultZone: http://localhost:8761/yonghe/
